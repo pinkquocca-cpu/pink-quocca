@@ -1,0 +1,91 @@
+id,status,header,caption,scene,mood,arms,trend,label
+001,ready,Market update,Market dropped 2%. I've checked|my portfolio 47 times. Very calm.,desk,panic,up,down,
+002,ready,Budget update,I'm not cheap. I'm pre-retired.,piggy,smile,,,
+003,ready,"Meanwhile, in the future",Early retirement: the long|weekend that never ends.,beach,shades,,,
+004,ready,Reality check,"Passive income is just very patient|income. Very, very patient.",plant,worried,,,"day 1,826"
+005,ready,Weekly review,Sunday: reviewing my portfolio and|calling it self-care.,desk,smile,rest,up,
+006,ready,Not financial advice,Portfolio is down. I'm choosing to|call it a discount.,desk2,deadpan,rest,down,
+007,ready,Payday,Payday arrives. Bills arrive faster.,bills,worried,,,BILLS
+008,ready,Monday,A meeting that could have been an email. Again.,calendar,deadpan,,,MON
+009,ready,Reality check,Compound interest is just time doing my job for me.,coins,smug,,,
+010,hold,Hot take,Index funds are boring. Also|working. Rude.,desk,smug,mug,up,(boring)
+011,ready,Red day,Red day. Tie on. Mug full. We carry on.,desk,deadpan,mug,down,
+012,ready,Budget update,My budget has a category called 'surprise'. It is undefeated.,bills,deadpan,,,SURPRISE
+013,ready,9-to-5,Plotting my escape from the 9-to-5. Step one: coffee.,desk,deadpan,mug,flat,
+014,ready,Reality check,Overnight success took eight years and a lot of tea.,plant,deadpan,,,year 8
+015,ready,Weekly review,"Sunday reset: tidy desk, tidy budget, untidy feelings.",desk,smile,rest,flat,
+016,ready,Market update,"Everything is red today. I am a calm, rational adult.",desk,deadpan,rest,down,
+017,ready,Savings log,Saved a little today. Future me says thanks.,piggy,smile,,,
+018,ready,"Meanwhile, in the future",Imagine a Tuesday with no alarm. I'm imagining it now.,beach,shades,,,
+019,ready,Reality check,Getting rich slowly is a great plan. It is also slow.,desk,deadpan,shrug,flat,
+020,ready,Hot take,Boring is underrated. Boring pays the rent.,desk,smug,mug,flat,
+021,ready,Portfolio check,Opened the app. Closed the app. Opened the app again.,desk,worried,rest,flat,
+022,ready,Budget update,Cutting back on takeaway so future me can afford more takeaway.,coins,smile,,,
+023,ready,9-to-5,Dream job: a very long lunch with no meetings after it.,desk,smile,mug,flat,
+024,ready,Reality check,A side hustle: the art of being tired in a second place.,desk,deadpan,rest,flat,
+025,ready,Weekly review,"Weekly money check: five minutes, one cup of tea, zero drama.",desk,smile,mug,flat,
+026,ready,Green day,Green day. I am a genius. Please ignore the red days.,desk,smug,mug,up,
+027,ready,Note to self,Skipped the impulse buy. Bought a little peace instead.,coins,smug,,,
+028,ready,"Meanwhile, in the future",Future me is on a beach. Present me is in a stand-up.,beach,shades,,,
+029,ready,Reality check,The hard part isn't knowing what to do. It's doing it for years.,plant,deadpan,,,year 10
+030,ready,Hot take,Spreadsheets are a love language. Mine is conditional formatting.,desk,smug,rest,up,
+031,ready,Market update,The market moved 0.3%. I felt every bit of it.,desk,worried,rest,down,
+032,ready,Subscriptions,Cancelled one subscription. Felt like a genius.,bills,smug,,,SUBS
+033,ready,Sunday scaries,Sunday night: the weekend ends and so does my enthusiasm.,calendar,worried,,,MON
+034,ready,Reality check,Everyone loves a plan until the plan needs patience.,plant,worried,,,day 1
+035,ready,Note to self,Do the boring thing again today. Future me will notice.,coins,smile,,,
+036,ready,Market update,Nothing happened today. I checked eleven times anyway.,desk,deadpan,rest,flat,
+037,ready,Budget update,Spreadsheet says I can afford it. Spreadsheet is not my friend.,bills,deadpan,,,SHEET
+038,ready,"Meanwhile, in the future","Retirement plan: stay patient, stay boring, mute the group chat.",beach,shades,,,
+039,ready,Reality check,Progress is invisible right up until it isn't.,plant,smile,,,day 400
+040,ready,Weekly review,Updated my budget sheet. Nothing changed. Felt amazing.,desk,smug,rest,flat,
+041,ready,News cycle,Headlines say panic. My plan says nap.,desk,smug,mug,down,
+042,ready,Payday,Payday: a brief moment of power. Then rent.,calendar,deadpan,,,PAYDAY
+043,ready,9-to-5,Out of office in spirit. Very much in office in body.,desk,deadpan,rest,flat,
+044,ready,Reality check,My net worth and my patience are both works in progress.,desk,deadpan,shrug,flat,
+045,ready,Hot take,A calm routine beats a clever trick. Mostly. I think.,desk,deadpan,rest,flat,
+046,ready,Market update,Sideways market. Sideways emotions.,desk,deadpan,rest,flat,
+047,ready,Savings log,Rounded up my savings. Rounded up my confidence.,piggy,smile,,,
+048,ready,Friday,Friday: the only day my face is allowed to smile.,desk,smile,mug,flat,
+049,ready,Reality check,Lifestyle creep called. I let it go to voicemail.,coins,smug,,,
+050,ready,Note to self,Drink water. Review the budget. Ignore the group chat.,desk,deadpan,mug,flat,
+051,ready,Monday,Monday open: the market and I are both reluctant.,desk,worried,rest,down,
+052,ready,Note to self,A daily coffee is fine. A budget is fine. Both can exist.,coins,smile,,,
+053,ready,"Meanwhile, in the future","Future me checks the weather, not the charts.",beach,shades,,,
+054,ready,Reality check,Early retirement is mostly spreadsheets and saying 'no thanks'.,desk,deadpan,rest,flat,
+055,ready,Weekly review,This week's win: I didn't check the app during dinner.,desk,smile,mug,flat,
+056,ready,Portfolio check,Checked my portfolio before coffee. Only the coffee was green.,desk,deadpan,rest,down,
+057,ready,Budget update,Emergency fund: for emergencies. Mostly for peace of mind.,piggy,smile,,,
+058,ready,9-to-5,Reply-all taught me patience. Retirement will teach me naps.,desk,smug,mug,flat,
+059,ready,Reality check,Some days the whole plan is: don't panic.,desk,deadpan,mug,down,
+060,ready,Hot take,Automation is just laziness with better branding.,desk,smug,rest,up,
+061,ready,Market update,Red candles everywhere. The quokka remains unbothered.,desk2,deadpan,rest,down,
+062,ready,Budget update,Tracking my spending. The numbers are judging me back.,bills,worried,,,SPEND
+063,ready,Monday,"Monday motivation: one day, no more Mondays.",calendar,deadpan,,,MON
+064,ready,Reality check,Nobody gets rich by checking apps. I'm checking anyway.,desk,worried,rest,flat,
+065,ready,Note to self,Set it up once. Let it run. Go outside.,desk,smile,mug,flat,
+066,ready,Friday close,Week over. Charts remain a mystery. Weekend remains real.,desk,smile,mug,flat,
+067,ready,Savings log,"Small habits, repeated often. Boring. Quietly adding up.",coins,smug,,,
+068,ready,"Meanwhile, in the future",No commute. No alarm. No 'quick sync'. Just sunshine.,beach,shades,,,
+069,ready,Reality check,Great news: it's a marathon. Bad news: it's a marathon.,desk,deadpan,shrug,flat,
+070,ready,Weekly review,"Monthly review: opened the sheet, felt things, closed the sheet.",desk,worried,rest,flat,
+071,ready,Market update,Volatility: the market's way of testing my patience.,desk,deadpan,rest,down,
+072,ready,Note to self,Wants: endless. Budget: finite. Quokka: tired.,bills,deadpan,,,WANTS
+073,ready,9-to-5,Working hard now so future me can work on a tan.,beach,shades,,,
+074,ready,Reality check,Wanted: get-rich-quick. Received: get-comfortable-eventually.,plant,deadpan,,,day 900
+075,ready,Hot take,Sleep is the best free upgrade. No notes.,desk,smile,mug,flat,
+076,ready,Not financial advice,Zoomed out: calm. Zoomed in: not calm.,desk,worried,shrug,flat,
+077,ready,Friday,"Friday plans: stay in, save money, call it a lifestyle.",coins,smile,,,
+078,ready,Payday,Every payslip is a small step towards a very long nap.,calendar,smile,,,PAYDAY
+079,ready,Reality check,Consistency is the cheat code. It is also painfully dull.,coins,smug,,,
+080,ready,Weekly review,Reviewing my goals. My goals are reviewing my patience.,desk,deadpan,rest,flat,
+081,ready,Market update,Ignored the charts all afternoon. Personal growth.,desk,smug,mug,flat,
+082,ready,Budget update,Sale season: my wallet and I are having a serious talk.,bills,worried,,,SALE
+083,ready,9-to-5,My calendar is full. My soul requests a long weekend.,calendar,worried,,,BUSY
+084,ready,Reality check,Impatience is expensive. Patience is cheap but slow.,desk,deadpan,rest,flat,
+085,ready,Hot take,Calm is a skill. Mine is still under construction.,desk2,deadpan,rest,flat,
+086,ready,Green day,A green day! Quietly pretending I planned this.,desk,smile,rest,up,
+087,ready,Budget update,No spending problem here. Just a very enthusiastic savings plan.,piggy,smug,,,
+088,ready,"Meanwhile, in the future","Someday: no deadlines, only decisions about lunch.",beach,shades,,,
+089,ready,Reality check,"Progress report: invisible. Trust the process, apparently.",plant,worried,,,"day 2,190"
+090,ready,Note to self,"Ten calm minutes a week with my budget. Wild, I know.",desk,smile,mug,flat,

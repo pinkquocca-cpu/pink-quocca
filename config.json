@@ -1,0 +1,16 @@
+{
+  "api_version": "v23.0",
+  "low_queue_warning": 7,
+  "min_gap_seconds": 60,
+  "hashtags": ["#financememes", "#personalfinance", "#earlyretirement", "#moneyhumor", "#FIRE"],
+  "ctas": [
+    "Send this to someone who gets it.",
+    "Save this for when you need a laugh.",
+    "Which one are you? Tell me below.",
+    "Tag a friend who relates.",
+    "Send this to your group chat.",
+    "Does this feel familiar? Reply with your version.",
+    "Share this with future you.",
+    "Save this and come back on a rough day."
+  ]
+}
