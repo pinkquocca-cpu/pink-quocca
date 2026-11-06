@@ -75,7 +75,7 @@ def fail(msg):
 
 # ----------------------------------------------------------------- graph api
 def graph_base(versioned=True):
-    root = os.environ.get("IG_GRAPH_BASE", "https://graph.instagram.com").rstrip("/")
+    root = (os.environ.get("IG_GRAPH_BASE") or cfg().get("graph_base") or "https://graph.instagram.com").rstrip("/")
     if not versioned:
         return root
     version = os.environ.get("IG_API_VERSION") or cfg().get("api_version", "v23.0")

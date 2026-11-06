@@ -1,8 +1,15 @@
 {
+  "graph_base": "https://graph.facebook.com",
   "api_version": "v23.0",
   "low_queue_warning": 7,
   "min_gap_seconds": 60,
-  "hashtags": ["#financememes", "#personalfinance", "#earlyretirement", "#moneyhumor", "#FIRE"],
+  "hashtags": [
+    "#financememes",
+    "#personalfinance",
+    "#earlyretirement",
+    "#moneyhumor",
+    "#FIRE"
+  ],
   "ctas": [
     "Send this to someone who gets it.",
     "Save this for when you need a laugh.",
