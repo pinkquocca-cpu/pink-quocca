@@ -149,6 +149,40 @@ def cmd_prepare(count):
     save_json(NEXT, items)
 
 
+HOSTS = ["https://graph.facebook.com", "https://graph.instagram.com"]
+
+
+def diagnose(uid, token, hosts):
+    print("--- diagnostics (no token is printed) ---", file=sys.stderr)
+    for host in hosts:
+        os.environ["IG_GRAPH_BASE"] = host
+        for label, path, fields in (("token owner", "me", "id,name"),
+                                    ("account", uid, "id,username"),
+                                    ("permissions", "me/permissions", None)):
+            params = {"access_token": token}
+            if fields:
+                params["fields"] = fields
+            try:
+                print(f"[{host}] {label}: {json.dumps(call('GET', path, params))[:600]}", file=sys.stderr)
+            except RuntimeError as e:
+                print(f"[{host}] {label}: {str(e)[:300]}", file=sys.stderr)
+
+
+def create_container(uid, params, token):
+    first = (os.environ.get("IG_GRAPH_BASE") or cfg().get("graph_base") or HOSTS[0]).rstrip("/")
+    order = [first] + [h for h in HOSTS if h != first]
+    for host in order:
+        os.environ["IG_GRAPH_BASE"] = host  # later calls (status, publish) reuse the host that worked
+        try:
+            cid = call("POST", f"{uid}/media", params)["id"]
+            print(f"container created via {host}")
+            return cid
+        except RuntimeError as e:
+            print(f"[{host}] failed: {e}", file=sys.stderr)
+    diagnose(uid, token, order)
+    fail("could not create the media container on any Instagram host")
+
+
 def publish_one(item, dry):
     token = os.environ.get("IG_ACCESS_TOKEN", "")
     uid = os.environ.get("IG_USER_ID", "")
@@ -165,7 +199,7 @@ def publish_one(item, dry):
     if not token or not uid:
         fail("IG_USER_ID and IG_ACCESS_TOKEN must be set")
     wait_until_reachable(url)
-    container = call("POST", f"{uid}/media", params)["id"]
+    container = create_container(uid, params, token)
     status = ""
     for _ in range(20):
         time.sleep(float(os.environ.get("IG_POLL_SECONDS", "6")))
