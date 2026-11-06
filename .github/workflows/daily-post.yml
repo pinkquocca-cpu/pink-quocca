@@ -1,0 +1,67 @@
+name: Daily post
+
+on:
+  schedule:
+    - cron: "30 4 * * *"
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many posts to publish now (launch days: 3)"
+        default: "1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install system libraries
+        run: sudo apt-get update && sudo apt-get install -y libcairo2 fontconfig
+
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+
+      - name: Check every caption still fits
+        run: python render.py check
+
+      - name: Draw the next post(s)
+        run: python post.py prepare --count "${{ inputs.count || 1 }}"
+
+      - name: Save the images (Instagram fetches them from here)
+        run: |
+          git config user.name "pink-quocca-bot"
+          git config user.email "pink-quocca-bot@users.noreply.github.com"
+          git add posts
+          git commit -m "Add post images" || echo "nothing to commit"
+          git push
+
+      - name: Publish to Instagram
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_AI_GENERATED: ${{ vars.IG_AI_GENERATED }}
+        run: python post.py publish
+
+      - name: Remember what was posted
+        if: always()
+        run: |
+          git add state.json
+          git commit -m "Update post state" || echo "nothing to commit"
+          git pull --rebase
+          git push
+
+      - name: Warn when the caption queue is running low
+        run: python post.py queue
